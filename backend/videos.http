@@ -1,0 +1,28 @@
+@api = http://localhost:5000
+
+GET {{api}}/videos
+###
+GET {{api}}/videos/65a54b4edf0a0d845a4641d9
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/truedddd",
+    "title": "falsddddddddde",
+    "description": "falseddddddddddd",
+    "author": "true",
+    "topics": "try ",
+    "repository": "https://github.com/trueded",
+    "wasSeen" : true
+ 
+}
+###
+DELETE {{api}}/videos/65a7edab6956d5afbb90d6ca
+###
+PUT {{api}}/videos/65a54e7d0f48a86ec5571c60
+Content-Type: application/json
+
+{
+    "author": "Fazt"
+}
